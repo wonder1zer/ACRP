@@ -4,7 +4,11 @@ import styled from 'styled-components'
 import Menu from '../comps/Menu'
 import Welcome from '../comps/Welcome'
 import OnlineForm from "../comps/OnlineForm";
-import Login from '../pages/Login'
+import Upload from "../comps/Upload";
+import Notification from "../comps/Notification";
+import Ticket from "../comps/Ticket";
+import Summ from "../comps/Summ";
+
 
 
 const Home = () => {
@@ -12,9 +16,12 @@ const Home = () => {
     <StyleHome>
         <Menu/> 
         <Routes>
-            <Route path='/' element={<Login/>}/>
-            <Route path='/home' element={<Welcome/>}/>
+            <Route path='/' element={<Welcome/>}/>
             <Route path='/online' element={<OnlineForm/>}/>
+            <Route path='/upload' element={<Upload/>}/>
+            <Route path='/notification' element={<Notification/>}/>
+            <Route path='/ticket' element={<Ticket/>}/>
+            <Route path='/summ' element={<Summ/>}/>
         </Routes>
     </StyleHome>
 

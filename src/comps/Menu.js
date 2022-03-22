@@ -13,15 +13,15 @@ import user from '../imgs/user.png'
 const Menu = () => {
   return (
     <SideMenu>
-        <Link to='/home' style={{textDecoration:"none"}}><img src={acrp} alt='logo'/></Link>
+        <Link to='/'><img src={acrp} alt='logo'/></Link>
         <ul>
             <Link to='/online'><li><img src={online} alt='online'/>Onlive Form</li></Link>
-            <li><a href='#'><img src={upload} alt='upload'/>Ticket Upload</a></li>
-            <li><a href='#'><img src={notification} alt='notification'/>Notification</a></li>
-            <li><a href='#'><img src={ticket} alt='ticket'/>Tickets</a></li>
-            <li><a href='#'><img src={summ} alt='summ'/>Summary</a></li>
+            <Link to='/upload'><li><img src={upload} alt='upload'/>Ticket Upload</li></Link>
+            <Link to='/notification'><li><img src={notification} alt='notification'/>Notification</li></Link>
+            <Link to='/ticket'><li><img src={ticket} alt='ticket'/>Tickets</li></Link>
+            <Link to='/summ'><li><img src={summ} alt='summ'/>Summary</li></Link>
             <div id='bot'>
-                <Link to='/'><li><img src={close} alt='close'/>Close sidebar</li></Link>
+                <li><img src={close} alt='close'/>Close sidebar</li>
                 <li><a href='#'><img src={user} alt='user'/>Shoxrux Raxmatov</a></li>
             </div>
         </ul>
