@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import acrp from '../imgs/8702 1ACRP.svg'
+import acrp from '../imgs/8702 1ACRP.png'
 
 const Main = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import acrp from '../imgs/Group 4logo.png'
 import summ from '../imgs/summ.png'
@@ -12,15 +13,15 @@ import user from '../imgs/user.png'
 const Menu = () => {
   return (
     <SideMenu>
-        <img src={acrp} alt='logo'/>
+        <Link to='/home' style={{textDecoration:"none"}}><img src={acrp} alt='logo'/></Link>
         <ul>
-            <li><a href='#'><img src={online} alt='online'/>Onlive Form</a></li>
+            <Link to='/online'><li><img src={online} alt='online'/>Onlive Form</li></Link>
             <li><a href='#'><img src={upload} alt='upload'/>Ticket Upload</a></li>
             <li><a href='#'><img src={notification} alt='notification'/>Notification</a></li>
             <li><a href='#'><img src={ticket} alt='ticket'/>Tickets</a></li>
             <li><a href='#'><img src={summ} alt='summ'/>Summary</a></li>
             <div id='bot'>
-                <li><a href='#'><img src={close} alt='close'/>Close sidebar</a></li>
+                <Link to='/'><li><img src={close} alt='close'/>Close sidebar</li></Link>
                 <li><a href='#'><img src={user} alt='user'/>Shoxrux Raxmatov</a></li>
             </div>
         </ul>
@@ -49,18 +50,19 @@ const SideMenu = styled.div`
         font-weight: 700;
         line-height: 40px;
         padding: 0;
-        li{
-            margin: 0 0 40px 0;
-            a{
+        a{
                 text-decoration: none;
                 color: #121212;
             }
             a:hover{
                 cursor: pointer;
             }
+        li{
+            margin: 0 0 40px 0;
         }
         img{
-            width: 20px;
+            width: 24px;
+            height: 24px;
             margin: 0 16px 0 0;
         }
 
